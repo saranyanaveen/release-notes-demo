@@ -1,0 +1,18 @@
+ name: Release Drafter
+
+on:
+  pull_request:
+    types: [closed]
+  push:
+    tags:
+      - 'v*' # Runs when a version tag like v1.0.0 is pushed
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Run Release Drafter
+        uses: release-drafter/release-drafter@v5
+
