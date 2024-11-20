@@ -1,0 +1,6 @@
+// Dummy feature to test Release Drafter
+public class DummyFeature {
+    public void dummyFeatureTest() {
+        System.out.println("This is just a dummy feature to test Release Drafter.");
+    }
+}
